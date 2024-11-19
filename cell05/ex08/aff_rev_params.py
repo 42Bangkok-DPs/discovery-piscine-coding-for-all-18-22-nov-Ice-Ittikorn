@@ -1,6 +1,6 @@
 import sys
-if len(sys.x) < 3:
+if len(sys.agev) < 3:
     print("none")
 else:
-    for value in reversed(sys.x[1:]):
+    for value in reversed(sys.agev[1:]):
         print(value)
