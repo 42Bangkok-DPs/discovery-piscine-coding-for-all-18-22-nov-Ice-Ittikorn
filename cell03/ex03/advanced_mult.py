@@ -1,5 +1,5 @@
 import sys 
-if len(sys.argv) == 1:
+if len(sys.argv) != 1:
     print("none")
 else:
     for i in range(0,11):
