@@ -1,6 +1,6 @@
 import sys
-if len(sys.argv) < 3:
+if len(sys.x) < 3:
     print("none")
 else:
-    for arg in reversed(sys.argv[1:]):
-        print(arg)
+    for value in reversed(sys.x[1:]):
+        print(value)
