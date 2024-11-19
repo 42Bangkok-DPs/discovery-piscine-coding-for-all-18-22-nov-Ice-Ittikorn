@@ -1,5 +1,6 @@
 import sys
-if len(sys.argv) > 0 :
-    print(sys.argv[1:].lower())
+if len(sys.argv) > 1:
+    for arg in sys.argv[1:]:
+        print(arg.lower())
 else:
     print("none")
