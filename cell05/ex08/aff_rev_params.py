@@ -1,6 +1,8 @@
 import sys
-if len(sys.agev) < 3:
-    print("none")
+
+x = sys.argv
+if len(x) > 1:
+    for arg in x[1:]:
+        print(arg.upper())
 else:
-    for value in reversed(sys.agev[1:]):
-        print(value)
+    print("none")
