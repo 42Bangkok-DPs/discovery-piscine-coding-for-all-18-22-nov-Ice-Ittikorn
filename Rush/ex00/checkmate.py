@@ -3,14 +3,8 @@ def checkmate(board):
         lines_board = board.count('\n') + 1  # หาจำนวนบรรทัด
         line1 = board.split('\n')  # แยกบรรทัด
         naltang = len(line1[0])  # หาความยาว line 1
-        check = True
 
-        for line_check in line1:
-            if len(line_check) != naltang:
-                check = False
-                break
-
-        if not check:
+        if naltang == lines_board:
             print("Error : talang mai pan jatturat")
 
     def check_King():
@@ -24,7 +18,7 @@ def checkmate(board):
         all_lo = {'.', 'K', 'Q', 'P', 'R' , '\n'}
         for char in board:
             if char not in all_lo:
-                print("me tre aeen nog ja K Q P R")
+                print("Error : me tre aeen nog ja K Q P R")
 
     check_Square()
     check_King()
