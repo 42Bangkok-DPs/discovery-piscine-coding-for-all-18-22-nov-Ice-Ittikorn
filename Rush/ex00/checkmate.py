@@ -22,4 +22,11 @@ def checkmate(board):
 
     check_Square()
     check_King()
-   
+
+    allowed_characters = {'.', 'K', 'Q', 'P', 'R'}
+    invalid_characters = set(board) - allowed_characters
+
+    if invalid_characters:
+        print(f"no: {invalid_characters}")
+    else:
+        print("no")
