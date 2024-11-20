@@ -1,5 +1,5 @@
 num = int(input("Enter a number less than 25\n"))
-if num > 24:
+if num > 25:
     print("eror")
 else :
     print(f"Inside the loop, my variable is {num}")
