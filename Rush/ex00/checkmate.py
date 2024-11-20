@@ -20,13 +20,14 @@ def checkmate(board):
         elif count_K == 0:
             print("mai me King ")
 
+    def check_lo() :
+        all_lo = {'.', 'K', 'Q', 'P', 'R' , '\n'}
+        for char in board:
+            if char not in all_lo:
+                print("me tre aeen nog ja K Q P R")
+
     check_Square()
     check_King()
+    check_lo()
 
-    allowed_characters = {'.', 'K', 'Q', 'P', 'R'}
-    invalid_characters = set(board) - allowed_characters
-
-    if invalid_characters:
-        print(f"no: {invalid_characters}")
-    else:
-        print("no")
+   
