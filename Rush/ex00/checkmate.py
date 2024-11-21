@@ -4,7 +4,7 @@ def checkmate(board):
         line1 = board.split('\n')  # แยกบรรทัด
         naltang = len(line1[0])  # หาความยาว line 1
 
-        if naltang == lines_board:
+        if naltang != lines_board:
             print("Error : talang mai pan jatturat")
 
     def check_King():
