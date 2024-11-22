@@ -3,7 +3,7 @@ from checkmate import checkmate
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python3 main.py <file1.chess> [<file2.chess> ...]")
+        print("Error")
         return
 
     for filename in sys.argv[1:]:
